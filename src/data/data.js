@@ -23,7 +23,7 @@ export const newsPosts = [
   },
   {
     title: "The Downsides of AI Artistry",
-    postIntro:
+    postintro:
       "What are the possible adverse effects of on-demand AI image generation?",
   },
   {
@@ -36,19 +36,19 @@ export const newsPosts = [
 export const newsRanking = [
   {
     img: Retro,
-    ranknumber: 1,
+    ranknumber: "01",
     title: "Reviving Retro PCs",
     postIntro: "What happens when old PCs are given modern upgrades?",
   },
   {
     img: Laptops,
-    ranknumber: 2,
+    ranknumber: "02",
     title: "  Top 10 Laptops of 2022",
     postIntro: "Our best picks for various needs and budgets.",
   },
   {
     img: Gamepad,
-    ranknumber: 3,
+    ranknumber: "03",
     title: "The Growth of Gaming",
     postIntro: "  How the pandemic has sparked fresh opportunities.",
   },

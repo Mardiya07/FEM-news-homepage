@@ -8,8 +8,10 @@ function Homepage() {
   return (
     <main>
       <Navigation />
-      <Hero />
-      <NewsPosts />
+      <div className="desktopMode">
+        <Hero />
+        <NewsPosts />
+      </div>
       <NewsRanking />
     </main>
   );

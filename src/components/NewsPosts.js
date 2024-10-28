@@ -4,13 +4,13 @@ import { newsPosts } from "../data/data";
 function NewsPosts() {
   return (
     <div className="newPostsContainer">
-      <h2 className="newsColumn-title">News</h2>
-      <div className="NewsPostList">
+      <h2 className="newsColumn-title">New</h2>
+      <div className="newsPostList">
         {newsPosts.map((post) => {
           return (
             <div className="newsPost" key={post}>
-              <h3 className="newsPostTitle -white">{post.title}</h3>
-              <p>{post.postintro}</p>
+              <h3 className="newsPostTitle">{post.title}</h3>
+              <p className="newsPostIntro">{post.postintro}</p>
             </div>
           );
         })}

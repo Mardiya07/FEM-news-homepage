@@ -5,18 +5,20 @@ import { heroText } from "../data/data";
 
 function Hero() {
   return (
-    <div>
+    <div className="heroSection">
       <div className="heroImage">
         <picture>
-          <source srcSet={HeroImageDesktop} media="(min-width:1240px)" />
+          <source srcSet={HeroImageDesktop} media="(min-width:1024px)" />
           <img src={HeroImageMobile} alt="Hero" />
         </picture>
       </div>
       <div className="heroText">
-        <h1>{heroText.title}</h1>
+        <h1 className="heroTitle">{heroText.title}</h1>
         <div className="heroText-introWrapper">
-          <p>{heroText.bodytext}</p>
-          <a href="link">{heroText.cta}</a>
+          <p className="heroText-intro">{heroText.bodytext}</p>
+          <a href="link" className="ctaButton">
+            {heroText.cta}
+          </a>
         </div>
       </div>
     </div>

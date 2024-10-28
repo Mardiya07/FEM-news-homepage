@@ -6,30 +6,28 @@ import Logo from "../assets/images/logo.svg";
 
 function Navigation() {
   const [isOpen, setIsopen] = useState(false);
-  const handleMenuOpen = function () {
-    return setIsopen(true);
+  const handleMenu = function () {
+    return setIsopen(!isOpen);
   };
-  const handleMenuClose = function () {
-    return setIsopen(false);
-  };
+  // const handleMenuClose = function () {
+  //   return setIsopen(false);
+  // };
   return (
     <nav className="navigation">
       <img src={Logo} alt="logo" className="logo" />
       <img
         src={IconMenu}
         alt="menu icon"
-        onClick={handleMenuOpen}
+        onClick={handleMenu}
         className={isOpen ? "icon hideMenu" : "icon"}
       />
       <div className={isOpen ? "navlistwrap" : "navlistwrap, hideMenu"}>
-        <div>
-          <img
-            src={IconClose}
-            alt="icon close"
-            onClick={handleMenuClose}
-            className="icon"
-          />
-        </div>
+        <img
+          src={IconClose}
+          alt="icon close"
+          onClick={handleMenu}
+          className="icon close"
+        />
         <div className="navlist">
           {navlinks.map((navlink) => {
             return (

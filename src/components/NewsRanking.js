@@ -3,7 +3,7 @@ import { newsRanking } from "../data/data";
 
 function NewsRanking() {
   return (
-    <div>
+    <div className="rankingNewsContainer">
       {newsRanking.map((postItem) => {
         return (
           <div className="rankingNewsCard" key={postItem}>
@@ -12,9 +12,11 @@ function NewsRanking() {
               src={postItem.img}
               alt="ranking-news-thumbnail"
             />
-            <h4 className="rankNumber"> {postItem.ranknumber}</h4>
-            <h3 className="newsPostTitle">{postItem.title}</h3>
-            <p className="newsPostIntro -black">{postItem.postIntro}</p>
+            <div className="rankingText">
+              <h4 className="rankNumber"> {postItem.ranknumber}</h4>
+              <h3 className="newsPostTitle">{postItem.title}</h3>
+              <p className="newsPostIntro , dark">{postItem.postIntro}</p>
+            </div>
           </div>
         );
       })}
