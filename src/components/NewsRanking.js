@@ -14,7 +14,7 @@ function NewsRanking() {
             />
             <div className="rankingText">
               <h4 className="rankNumber"> {postItem.ranknumber}</h4>
-              <h3 className="newsPostTitle">{postItem.title}</h3>
+              <h3 className="newsTitle">{postItem.title}</h3>
               <p className="newsPostIntro , dark">{postItem.postIntro}</p>
             </div>
           </div>

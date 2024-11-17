@@ -99,10 +99,21 @@ main {
   /* took ages to find this fix to aligning the close icon */
   margin-left: auto;
 }
+.navlist {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* outline: 1px solid red; */
+}
 
 .navlistItem a {
   font-size: 1.8rem;
   color: var(--Very-dark-blue);
+}
+
+.navlistItem a:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
 }
 
 .hideMenu {
@@ -127,7 +138,7 @@ main {
   font-weight: 800;
 }
 
-.heroText-intro {
+.heroText-overview {
   font-size: 1.5rem;
   color: var(--Dark-grayish-blue);
   padding: 2rem 0;
@@ -140,6 +151,11 @@ main {
   background-color: var(--Soft-red);
   padding: 1.5rem 3.5rem;
   font-size: 1.5rem;
+}
+.ctaButton:hover {
+  background-color: var(--Very-dark-blue);
+  color: var(--Off-white);
+  cursor: pointer;
 }
 
 /* <----**New Post Section**----> */
@@ -171,6 +187,10 @@ main {
   font-size: 1.5rem;
   padding: 1rem 0;
 }
+.newsPostTitle:hover {
+  color: var(--Soft-orange);
+  cursor: pointer;
+}
 .dark {
   color: var(--Dark-grayish-blue);
 }
@@ -183,27 +203,30 @@ main {
 }
 .rankingNewsCard {
   display: flex;
-  margin: 2rem 0;
 }
 .newsPostThumbnail {
   width: 100px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .rankingText {
   padding-left: 2rem;
-  /* outline: 1px solid red; */
 }
 .rankNumber {
   font-size: 3rem;
   color: var(--Grayish-blue);
 }
-.newsPostTitle {
+.newsTitle {
   font-size: 1.8rem;
+}
+.newsTitle:hover {
+  color: var(--Soft-red);
+  cursor: pointer;
 }
 
 @media screen and (min-width: 64em) {
   main {
     max-width: none;
+    padding: 5vh 9vw;
   }
   .navigation {
     /* padding: 0; */
@@ -220,7 +243,6 @@ main {
   }
 
   .navlist {
-    display: flex;
     flex-direction: row;
     gap: 2rem;
   }
@@ -234,7 +256,22 @@ main {
   .heroText {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    /* gap: 9dvw; */
+    height: 100%;
+  }
+  .heroTitle {
+    flex: 1;
+    font-size: 4rem;
+  }
+  .heroText-Wrapper {
+    flex: 1;
+    margin: 0;
+    padding: 0 2rem;
+  }
+  .heroText-overview {
+    padding-top: 0;
+    margin-bottom: 2rem;
   }
   .desktopMode {
     display: flex;
@@ -243,5 +280,20 @@ main {
   }
   .newPostsContainer {
     margin: 0;
+    min-width: 35rem;
+  }
+
+  .rankingNewsContainer {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 85em) {
+  main {
+    /* max-width: 85em; */
+  }
+  .heroTitle {
+    flex: 1;
+    font-size: 5.5rem;
   }
 }

@@ -14,8 +14,8 @@ function Hero() {
       </div>
       <div className="heroText">
         <h1 className="heroTitle">{heroText.title}</h1>
-        <div className="heroText-introWrapper">
-          <p className="heroText-intro">{heroText.bodytext}</p>
+        <div className="heroText-Wrapper">
+          <p className="heroText-overview">{heroText.overview}</p>
           <a href="link" className="ctaButton">
             {heroText.cta}
           </a>
