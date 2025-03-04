@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - [Solution URL](https://github.com/Mardiya07/FEM-news-homepage)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://news-homepage-mardiya07.netlify.app/)
 
 ## My process
 
