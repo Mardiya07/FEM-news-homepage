@@ -2,7 +2,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="attribution" role="contentinfo">
+    <footer className="attribution">
       Challenge by{" "}
       <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl">
         Frontend Mentor.

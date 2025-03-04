@@ -79,7 +79,8 @@ main {
   align-items: center;
   position: relative;
   background-color: var(--Off-white);
-  padding: 3rem 0;
+  padding: 2rem 0 6rem 0;
+  width: 100%;
   /* outline: 1px solid red; */
 }
 .navlistwrap {
@@ -108,7 +109,7 @@ main {
 
 .navlistItem a {
   font-size: 1.8rem;
-  color: var(--Very-dark-blue);
+  color: var(--Dark-grayish-blue);
 }
 
 .navlistItem a:hover {
@@ -147,10 +148,12 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   font-weight: 500;
-  color: var(--Off-white);
+  color: var(--Very-dark-blueC);
   background-color: var(--Soft-red);
   padding: 1.5rem 3.5rem;
   font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
 }
 .ctaButton:hover {
   background-color: var(--Very-dark-blue);
@@ -214,7 +217,7 @@ main {
 }
 .rankNumber {
   font-size: 3rem;
-  color: var(--Grayish-blue);
+  color: var(--Soft-red);
 }
 .newsTitle {
   font-size: 1.8rem;
@@ -300,5 +303,8 @@ main {
   .heroTitle {
     flex: 1;
     font-size: 5.5rem;
+  }
+  .newsColumn-title {
+    font-size: 4rem;
   }
 }

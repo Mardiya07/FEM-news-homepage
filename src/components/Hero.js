@@ -16,9 +16,9 @@ function Hero() {
         <h1 className="heroTitle">{heroText.title}</h1>
         <div className="heroText-Wrapper">
           <p className="heroText-overview">{heroText.overview}</p>
-          <a href="##" className="ctaButton">
+          <button className="ctaButton" type="button">
             {heroText.cta}
-          </a>
+          </button>
         </div>
       </div>
     </div>
