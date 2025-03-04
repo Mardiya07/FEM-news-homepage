@@ -3,6 +3,7 @@ import Navigation from "./Navigation";
 import Hero from "./Hero";
 import NewsPosts from "./NewsPosts";
 import NewsRanking from "./NewsRanking";
+import Footer from "./Footer";
 
 function Homepage() {
   return (
@@ -13,6 +14,7 @@ function Homepage() {
         <NewsPosts />
       </div>
       <NewsRanking />
+      <Footer></Footer>
     </main>
   );
 }

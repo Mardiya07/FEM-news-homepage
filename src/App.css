@@ -165,6 +165,7 @@ main {
   padding: 2rem;
   margin: 4rem auto;
   /* max-width: 70em; */
+  height: inherit;
 }
 .newsColumn-title {
   color: var(--Soft-orange);
@@ -221,6 +222,10 @@ main {
 .newsTitle:hover {
   color: var(--Soft-red);
   cursor: pointer;
+}
+
+/* <----------------Footer---------------> */
+.attribution {
 }
 
 @media screen and (min-width: 64em) {
